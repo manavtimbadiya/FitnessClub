@@ -1,0 +1,139 @@
+/*Navigation */
+#logo img {
+    height: 70px;
+}
+
+.nav {
+    display: flex;
+    padding: 0px 0px;
+}
+#navbar{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.nav li a {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(198, 198, 243);
+    font-family: 'Bree Serif', serif;
+}
+
+
+/*Home*/
+#home::before{
+    height: 73%;
+}
+#home h1 {
+    font-size: 22px;
+    padding: 12px;
+    margin-top: 290px;
+}
+
+
+#home p {
+    font-size: 11px;
+    padding: 7px;
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 9px;
+    padding: 3px 13px;
+    border: 2px solid white;
+    background-color: rgb(140, 233, 87);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+/*About Us */
+#aboutus h1 {
+    padding-top: 156px;
+}
+.h-primary {
+    font-size: 2rem;
+        padding: 0px;
+    }
+
+#aboutus .about{
+    flex-direction: column;
+}
+
+#aboutus .box img {
+    height: 127px;
+    display: block;
+    margin: auto;
+}
+
+/*Specialization */
+#specialization .special{
+    flex-direction: column;
+}
+.special .box1, .box2 {
+    border: 3px solid brown;
+    margin: 0px 1px 15px 0px;
+    border-radius: 11px;
+    background-color: rgb(100, 97, 97);
+}
+.special .box1 img{
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+.special .box2 img{
+    height: 135px;
+    display: block;
+    margin: auto;
+ 
+}
+
+#specialization h1 {
+    font-size: 35px;
+}
+
+#specialization h2 {
+    color: #fafffa;
+    font-size: 25px;
+}
+.special {
+    display: flex;
+    padding: 13px 0px 10px 0px;
+    margin: 15px 0px 10px 0px;
+    color: #43d8d8;
+}
+/*Contact Us */
+
+.contact-box input {
+    width: 198%;
+    padding: 0.3rem;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+/* Footer */
+.contact-box .button {
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 152px;
+    border: 3px solid black;
+    border-radius: 14px;
+    cursor: pointer;
+    align-items: center;
+}
