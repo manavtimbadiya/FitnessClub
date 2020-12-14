@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* logo and image */
+#logo{
+    padding: 5px;
+}
+#logo img{
+    height: 115px;
+    
+}
+
+/* navigation bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+}
+
+.nav{
+    display: flex;
+    padding: 35px 28px;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.nav li a{
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    color: rgb(198, 198, 243);
+    font-family: 'Bree Serif', serif;
+}
+
+.nav li a:hover{
+    color: black;
+    background-color: white;
+    
+    
+}
+/* Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 505px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('b2.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: #6fd6cce6;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px;
+  /*  font-family: 'Dancing Script', cursive;*/
+}
+
+
+/* About Us*/
+
+/*#aboutus::before{
+    content: "";
+    background: url('b1.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}*/
+#aboutus{
+    margin: 50px;
+    padding: 0px;
+    
+}
+#aboutus h1{
+   padding-top: 100px;
+    
+}
+#aboutus .about{
+        display: flex;
+}
+#aboutus .box{
+    margin: 24px;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: #4bb57a;
+    transition-property: all 1s ease-in-out .1s;
+}
+#aboutus .box:hover{
+    background-color:#06a34d;;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#aboutus .box img{
+    height: 215px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Specialization */
+#specialization::before{
+    content: "";
+    background: url('logo3.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+#specialization{
+    position: relative;
+}
+#specialization h1{
+  
+}
+#specialization h2{
+    color: #fafffa;
+}
+.special{
+    display: flex;
+    padding: 15px 56px 10px 56px;
+    margin: 15px 25px 10px 56px;
+    color: #43d8d8;
+}
+.special .box1,.box2{
+    border: 3px solid brown;
+    padding: 15px 56px 10px 56px;
+    margin: 15px 45px 10px 3px;
+    border-radius: 28px;
+    background-color: rgb(100, 97, 97);
+    cursor: pointer;
+}
+.special .box2:hover{
+    background-color: rgb(121, 96, 96);
+    transform: scale(1.1);
+}
+.special .box1:hover{
+    background-color: rgb(121, 96, 96);
+    transform: scale(1.1);
+}
+.special .box1 img{
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+.special .box2 img{
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('b3.jpg')no-repeat center center/cover;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box input{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+.contact-box form{
+    width: 25%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.contact-box .button {
+    margin: 20px 82px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 180px;
+    border: 3px solid black;
+    border-radius: 14px;
+    cursor: pointer;
+    align-items: center;
+}
+.contact-box .button:hover{
+    background-color: black;
+    color:white;
+    transform: scale(1.2);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 0px 15px;
+    font-size: 20px;
+}
+
+footer .name{
+    font-family: 'Bree Serif', serif;
+}
+
+/*Utility Classes */
+.h-primary{
+    font-size: 3.0rem;
+    padding: 14px;
+   /*font-family: 'Bree Serif', serif;*/
+}
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 14px;
+   /* font-family: 'Bree Serif', serif;*/
+}
+.btn{
+    margin-top: 6px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: rgb(140, 233, 87);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.btn:hover{
+    background-color: greenyellow;
+    transform: scale(1.1);
+}
+.center{
+    text-align: center;
+}
+
+/* Footer*/
+#footer .links{
+    display: flex;
+    justify-content: center;
+}
+#footer .links  img{
+    height: 30px;
+    padding: 8px;
+}
